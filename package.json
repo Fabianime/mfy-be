@@ -1,0 +1,30 @@
+{
+  "name": "mfy-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabianime/mfy-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fabianime/mfy-be/issues"
+  },
+  "homepage": "https://github.com/Fabianime/mfy-be#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "freemarker": "^2.1.0",
+    "http-status-codes": "^1.4.0",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
+    "superagent": "^5.2.1"
+  }
+}
