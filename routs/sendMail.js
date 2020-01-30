@@ -37,7 +37,10 @@ app.post('/sendContactRequest', (request, response) => {
     freemarker.render(currentTemplate, {...request.body}, (templateError, renderTemplate) => {
         if (Helper.isErrorAndDefaultErrorHandling(templateError, response)) return;
         const customerMailOption = { ...mailOptions };
-        customerMailOption.to = 'fabian.bedarf@evia.de'; // request.body.email;
+            customerMailOption.to = 'fabian.bedarf@evia.de'; // request.body.email;
+        if(request.body.email === 't.chimphawong@hotmail.de' || request.body.email  === 't.chimphawong@gmail.com') {
+            customerMailOption.to = request.body.email;
+        }
         customerMailOption.html = renderTemplate;
 
         sendRenderedTemplateToAddress(customerMailOption, response);
