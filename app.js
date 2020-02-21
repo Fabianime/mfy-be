@@ -18,7 +18,6 @@ app.use((req, res, next) => {
     const allowedOrigins = ['http://127.0.0.1', 'https://localhost:4200', 'https://just-bedarf.de', 'http://just-bedarf.de'];
     const { origin } = req.headers;
 
-    console.log(origin + allowedOrigins[1]);
     if(origin !== allowedOrigins[1]) validateRequest(req, res);
 
     if (allowedOrigins.indexOf(origin) > -1) {
