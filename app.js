@@ -15,7 +15,7 @@ app.set('view engine', 'handlebars');
 // Add headers
 app.use((req, res, next) => {
     // Website you wish to allow to connect
-    const allowedOrigins = ['http://127.0.0.1', 'https://localhost:4200', 'https://just-bedarf.de', 'http://just-bedarf.de'];
+    const allowedOrigins = ['http://127.0.0.1', 'http://localhost:4200', 'https://just-bedarf.de', 'http://just-bedarf.de'];
     const { origin } = req.headers;
 
     if(origin !== allowedOrigins[1]) validateRequest(req, res);
