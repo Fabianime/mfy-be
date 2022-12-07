@@ -19,8 +19,8 @@
   "homepage": "https://github.com/Fabianime/mfy-be#readme",
   "dependencies": {
     "basic-auth": "^2.0.1",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-handlebars": "^3.1.0",
     "freemarker": "^2.1.0",
     "http-status-codes": "^1.4.0",
